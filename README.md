@@ -1,6 +1,14 @@
 Salamander
 =====
 
-"Fork Salamander" to create a new MOOSE-based application.
+Add a new file:
 
-For more information see: [http://mooseframework.org/create-an-app/](http://mooseframework.org/create-an-app/)
+Make.username
+
+with the contents:
+MOOSE_DIR = /Path/To/moose
+
+in the current directory before compiling. 
+
+
+
