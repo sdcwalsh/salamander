@@ -4,6 +4,11 @@
 #include "ModulesApp.h"
 #include "MooseSyntax.h"
 
+
+// Auxvariables
+
+#include "SalamanderOldValueAux.h"
+
 template<>
 InputParameters validParams<SalamanderApp>()
 {
@@ -45,6 +50,10 @@ extern "C" void SalamanderApp__registerObjects(Factory & factory) { SalamanderAp
 void
 SalamanderApp::registerObjects(Factory & factory)
 {
+
+
+	  registerAux(SalamanderOldValueAux);
+
 }
 
 // External entry point for dynamic syntax association
